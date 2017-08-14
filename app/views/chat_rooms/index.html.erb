@@ -1,0 +1,7 @@
+<h1>Chat rooms</h1>
+
+<p class="lead"><%= link_to 'New chat room', new_chat_room_path, class: 'btn btn-primary' %></p>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+<ul>
+  <%= render @chat_rooms %>
+</ul>
